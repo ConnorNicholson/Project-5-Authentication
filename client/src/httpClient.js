@@ -3,7 +3,7 @@ import jwtDecode from 'jwt-decode'
 
 // Instantiate axios
 // const httpClient = axios.create({baseURL: 'http://localhost:5000'})
-const httpClient = axios.create()
+const httpClient = axios.create({baseURL: 'learnhosting.herokuapp.com'})
 
 
 httpClient.getToken = function() {
