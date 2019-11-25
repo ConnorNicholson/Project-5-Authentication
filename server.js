@@ -37,7 +37,7 @@ let uri = "";
 
 if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
-    // uri = process.env.ATLAS_URI
+    uri = process.env.ATLAS_URI
 } else {
     // uri = "mongodb://localhost/productsData"
     uri = process.env.ATLAS_URI

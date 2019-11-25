@@ -1,5 +1,5 @@
 {
-  "name": "phase3_ecom_project",
+  "name": "phase-5-authentication",
   "version": "1.0.0",
   "description": "This repo is for my eCommerce Website - Phase 5",
   "main": "server.js",
@@ -36,13 +36,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ConnorNicholson/eComm-Project-Phase-3.git"
+    "url": "git+https://github.com/ConnorNicholson/Project-5-Authentication.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ConnorNicholson/eComm-Project-Phase-3/issues"
+    "url": "https://github.com/ConnorNicholson/Project-5-Authentication/issues"
   },
-  "homepage": "https://github.com/ConnorNicholson/eComm-Project-Phase-3#readme"
+  "homepage": "https://github.com/ConnorNicholson/Project-5-Authentication#readme"
 }
