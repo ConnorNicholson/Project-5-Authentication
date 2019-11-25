@@ -217,3 +217,5 @@
 ::1 - - [25/Nov/2019:02:40:07 +0000] "GET /api/products HTTP/1.1" 304 -
 ::1 - - [25/Nov/2019:02:40:16 +0000] "POST /api/users HTTP/1.1" 200 283
 ::1 - - [25/Nov/2019:02:40:25 +0000] "POST /api/users/authenticate HTTP/1.1" 200 269
+::1 - - [25/Nov/2019:02:48:06 +0000] "GET /api/products HTTP/1.1" 304 -
+::1 - - [25/Nov/2019:02:48:18 +0000] "POST /api/users HTTP/1.1" 200 288
