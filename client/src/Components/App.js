@@ -14,12 +14,13 @@ import SignUp from './SignUp';
 import Home from './Home';
 import Products from './Products';
 
+const port = process.env.PORT || 3001
+
 class App extends React.Component {
   constructor(props) {
     super(props)
-    let PORT = process.env.PORT || 3001
     this.state = {
-      fetchEndpoint: `http://localhost:${PORT}/api/products`,
+      fetchEndpoint: `http://localhost:${port}/api/products`,
       allProducts: [],
       everything: true,
       telescopes: false,
@@ -65,7 +66,7 @@ class App extends React.Component {
 
   viewEverything = () => {
     this.setState({
-        fetchEndpoint: 'http://localhost:5000/api/products',
+        fetchEndpoint: `http://localhost:${port}/api/products`,
         everything: true,
         telescopes: false,
         sextants: false,
@@ -77,7 +78,7 @@ class App extends React.Component {
 
   telescopes = () => {
     this.setState({
-        fetchEndpoint: 'http://localhost:5000/api/productfilter/telescopes',
+        fetchEndpoint: `http://localhost:${port}/api/productfilter/telescopes`,
         everything: false,
         telescopes: true,
         sextants: false,
@@ -89,7 +90,7 @@ class App extends React.Component {
 
   sextants = () => {
     this.setState({
-        fetchEndpoint: 'http://localhost:5000/api/productfilter/sextants',
+        fetchEndpoint: `http://localhost:${port}/api/productfilter/sextants`,
         everything: false,
         telescopes: false,
         sextants: true,
@@ -101,7 +102,7 @@ class App extends React.Component {
 
   belowThousand = () => {
     this.setState({
-        fetchEndpoint: 'http://localhost:5000/api/productprice/lowprice',
+        fetchEndpoint: `http://localhost:${port}/api/productprice/lowprice`,
         everything: false,
         telescopes: false,
         sextants: false,

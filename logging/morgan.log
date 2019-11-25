@@ -21,3 +21,5 @@
 ::1 - - [25/Nov/2019:16:54:29 +0000] "GET /api/products HTTP/1.1" - -
 ::1 - - [25/Nov/2019:16:54:31 +0000] "GET /api/products HTTP/1.1" 200 2970
 ::1 - - [25/Nov/2019:16:54:50 +0000] "GET /api/products HTTP/1.1" 200 2970
+::1 - - [25/Nov/2019:19:26:23 +0000] "GET /api/products HTTP/1.1" 200 2970
+::1 - - [25/Nov/2019:19:26:54 +0000] "GET /api/products HTTP/1.1" 304 -
