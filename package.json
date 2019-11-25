@@ -17,12 +17,12 @@
     "if-env": "^1.0.4",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.7.11",
-    "react-router": "^5.1.2"
+    "react-router": "^5.1.2",
+    "morgan": "^1.9.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^6.2.1",
-    "morgan": "^1.9.1",
     "request": "^2.88.0"
   },
   "scripts": {
@@ -32,11 +32,8 @@
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
     "install": "cd client && npm install",
-    "build": "cd client && npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ConnorNicholson/Project-5-Authentication.git"
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "",
