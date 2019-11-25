@@ -17,8 +17,9 @@ import Products from './Products';
 class App extends React.Component {
   constructor(props) {
     super(props)
+    let PORT = process.env.PORT || 3001
     this.state = {
-      fetchEndpoint: 'http://localhost:5000/api/products',
+      fetchEndpoint: `http://localhost:${PORT}/api/products`,
       allProducts: [],
       everything: true,
       telescopes: false,
