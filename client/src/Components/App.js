@@ -20,7 +20,7 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      fetchEndpoint: `${PORT}/api/products`,
+      fetchEndpoint: `https://reactjs-proj5-authentication.herokuapp.com/api/products`,
       allProducts: [],
       everything: true,
       telescopes: false,
@@ -66,7 +66,7 @@ class App extends React.Component {
 
   viewEverything = () => {
     this.setState({
-        fetchEndpoint: `${PORT}/api/products`,
+        fetchEndpoint: `https://reactjs-proj5-authentication.herokuapp.com/api/products`,
         everything: true,
         telescopes: false,
         sextants: false,
