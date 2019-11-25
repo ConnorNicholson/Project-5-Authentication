@@ -12,7 +12,7 @@ const usersRoutes = require('./routes/index');
 // Set app to express function
 const app = express();
 // Sets PORT to equal 3000
-// const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -59,6 +59,6 @@ connection.once('open', () => {
 })
 
 // instructs express server to listen on a specific port, than console logs the current port (Whether the env var or 3000)
-app.listen(5000, function() {
-    console.log(`Server now listening on port 5000`);
+app.listen(PORT, function() {
+    console.log(`Server now listening on port ${PORT}`);
 });
