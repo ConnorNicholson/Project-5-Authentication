@@ -30,7 +30,7 @@ const NavBar = (props) => {
                   </li>
                 </ul>
                 <Route exact path="/" component={Home} />
-                <Route path="/products" render={(props) => <Products {...props} allProducts={(allProducts)} viewEverything={viewEverything} telescopes={telescopes} sextants={sextants} belowThousand={belowThousand}/>}/>
+                <Route path="/products" render={(props) => <Products {...props} allProducts={allProducts} viewEverything={viewEverything} telescopes={telescopes} sextants={sextants} belowThousand={belowThousand}/>}/>
                 <Route path="/contact" component={Contact} />
                 <Route path="/logout" render={(props) => <LogOut {...props} onLogOut={onLogOut}/>} />
               </div>
